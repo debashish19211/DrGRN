@@ -1,0 +1,6 @@
+title: DrGRN
+logo: Images/DrGRN.png
+description: A GRN based Drug Repuposing Pipeline
+show_downloads: true
+google_analytics:
+theme: jekyll-remote-theme
