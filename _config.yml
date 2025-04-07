@@ -4,3 +4,14 @@ description: A GRN based Drug Repuposing Pipeline
 show_downloads: true
 google_analytics:
 theme: jekyll-remote-theme
+baseurl: ""  # Leave empty for user.github.io
+url: "https://debashish19211.github.io"
+markdown: kramdown
+
+include:
+  - notebooks
+  - assets
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
