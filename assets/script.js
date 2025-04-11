@@ -1,1 +1,1 @@
-console.log("Welcome to DrGRN site!");
+console.log("DrGRN");
