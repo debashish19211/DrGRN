@@ -4,37 +4,83 @@
   <meta charset="UTF-8" />
   <title>Home - DrGRN</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    nav {
+      display: flex;
+      gap: 10px;
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    nav a, .dropbtn {
+      text-decoration: none;
+      padding: 10px;
+      background-color: #ddd;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      background-color: #fff;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    
     <img src="Images/DrGRN.png" alt="DrGRN" width="150" height="auto">
 
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="1. GRN_Construction/graph.html">GRN Construction</a>
 
       <div class="dropdown">
-      <button class="dropbtn">GRN Construction ▼</button>
-      <div class="dropdown-content">
-        <a href="1. GRN_Construction/graph.html">CellOracle</a>
-        <a href="notebook2.html">SCENIC</a>
-        <a href="notebook3.html">Notebook 3</a>
+        <button class="dropbtn">Analysis ▼</button>
+        <div class="dropdown-content">
+          <a href="notebooks/notebook2.html">Defining Unique and Shared Nature</a>
+          <a href="notebooks/notebook2.html">GRN Graph Comparison</a>
+          <a href="notebooks/notebook2.html">TF Candidate Selection</a>
+        </div>
       </div>
-      </div>
-      
-      <a href="notebooks/notebook2.html">Definining Unique and shared nature</a>
-      <a href="notebooks/notebook2.html">GRN graph Comparison</a>
-      <a href="notebooks/notebook2.html">TF Candidate Selection</a>
-
-
     </nav>
   </header>
+
   <main>
     <p>GRN Based Drug Repurpossing Pipeline</p>
     <img src="Images/Pipeline_Protocol.png" alt="Pipeline Protocol" width="1000" height="auto">
-
   </main>
+
   <script src="assets/script.js"></script>
 </body>
 </html>
