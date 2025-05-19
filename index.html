@@ -54,6 +54,35 @@
     .dropdown:hover .dropbtn {
       background-color: #ccc;
     }
+
+    .sub-dropdown {
+      position: relative;
+    }
+
+    .sub-dropdown:hover .sub-dropdown-content {
+      display: block;
+      left: 100%;
+      top: 0;
+    }
+
+    #contentArea {
+      display: none;
+      padding: 20px;
+    }
+
+    .nav-buttons {
+      margin-top: 10px;
+    }
+
+    .nav-buttons a {
+      margin-right: 10px;
+      text-decoration: none;
+      padding: 6px 12px;
+      background: #04AA6D;
+      color: white;
+      border-radius: 4px;
+    }
+    
   </style>
 </head>
 <body>
@@ -68,53 +97,57 @@
         <button class="dropbtn">GRN Construction ▼</button>
         <div class="dropdown-content">
           <a href="1. GRN_Construction/GRN_Celloracle.html">Celloracle Human MI </a>
-          <a href="notebooks/notebook2.html">Celloracle KPMP</a>
+          <a href="1. GRN_Construction/KPMP_Celloracle.html">Celloracle KPMP</a>
          
         </div>
       </div>
 
        <div class="dropdown">
         <button class="dropbtn">Regulon Enrichment ▼</button>
-         
         <div class="dropdown-content">
-          <a href="">Human MI</a>
-          <div id="Human MI" class="sub-tabcontent">
-            <div class="sub-sub-tab">
-            <button class="subsubtablinks" onclick="openSubSubTab(event, 'Aucell Enrichment')">Aucell Enrichment</button>
-            <button class="subsubtablinks" onclick="openSubSubTab(event, 'Celloracle Decouple')">Celloracle Decoupler</button>
+
+          <div class="sub-dropdown">
+            <button>Aucell Enrichment ▼</button>
+            <div class="sub-dropdown-content">
+              <a href="2. Defining Uniqueness and shared Nature of Cell Specific GRNs/Human_MI/Human_MI_Fib/Human_MI_Fib_scenic.html">Human_MI_Fib </a>
+              <a href="1. GRN_Construction/GRN_Celloracle.html">KPMP_Fib </a>
+              
+            </div>
           </div>
 
-          <div id="Aucell Enrichmen" class="sub-sub-tabcontent">
-            <iframe src="2. Defining Uniqueness and shared Nature of Cell Specific GRNs/Human_MI/Human_MI_Fib/Human_MI_Fib_scenic.html"></iframe>
-            <div class="nav-buttons">
-              <a href="index.html">Home</a>
-              <a href="javascript:history.back()">Back</a>
+          <div class="sub-dropdown">
+            <button>Celloracle annotation Enrichment ▼</button>
+            <div class="sub-dropdown-content">
+              <a href="1. GRN_Construction/GRN_Celloracle.html">Human_MI_Fib </a>
+              <a href="1. GRN_Construction/GRN_Celloracle.html">KPMP_Fib </a>
             </div>
           </div>
-            
-          <div id="Celloracle Decoupler" class="sub-sub-tabcontent">
-            <iframe src="notebook1_analysisA1.html"></iframe>
-            <div class="nav-buttons">
-            <a href="index.html">Home</a>
-            <a href="javascript:history.back()">Back</a>
-            </div>
-          </div>
-          
-          <a href="notebooks/notebook2.html">KPMP Regulon Enrichment</a>
-         
+    
         </div>
       </div>
-
-            <div class="dropdown">
+         
+       <div class="dropdown">
         <button class="dropbtn">GRN Graph Comparison ▼</button>
         <div class="dropdown-content">
-          <a href="1. GRN_Construction/GRN_Celloracle.html">Pairwise Comparison</a>
-          
-          <a href="notebooks/notebook2.html">Multiple Graph</a>
-         
+          <div class="sub-dropdown">
+            <button>Pairwise Comparison ▼</button>
+            <div class="sub-dropdown-content">
+              <a href=".html">Human_MI_Fib </a>
+              <a href="1. GRN_Construction/GRN_Celloracle.html">KPMP_Fib </a>
+              
+            </div>
+          </div>
+
+          <div class="sub-dropdown">
+            <button>Multiple Comparison ▼</button>
+            <div class="sub-dropdown-content">
+              <a href="1. GRN_Construction/GRN_Celloracle.html">Human_MI_Fib </a>
+              <a href="1. GRN_Construction/GRN_Celloracle.html">KPMP_Fib </a>
+            </div>
+          </div>
+    
         </div>
       </div>
-
       
       <a href="notebooks/notebook2.html">TF Candidate Selection</a>
       <a href="1. GRN_Construction/graph.html">In-Silico Validation</a>
